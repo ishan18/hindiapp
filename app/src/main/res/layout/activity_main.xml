@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <FrameLayout
+        style="@style/Categories"
+        android:background="@color/Blue" >
+        <Button
+            android:id="@+id/family"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/Family"
+            android:paddingLeft="32dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            app:fontFamily="monospace"/>
+    </FrameLayout>
+
+<FrameLayout
+    style="@style/Categories"
+    android:background="@color/Yellow">
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/colours"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/Colours"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:paddingLeft="32dp"
+        app:fontFamily="monospace"/>
+</FrameLayout>
+
+    <FrameLayout
+        style="@style/Categories"
+        android:background="@color/Green">
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/numbers"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/Numbers"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:paddingLeft="32dp"
+            app:fontFamily="monospace"/>
+    </FrameLayout>
+
+    <FrameLayout
+        style="@style/Categories"
+        android:background="@color/Purple">
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/animal"
+            android:paddingLeft="32dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/Animal"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            app:fontFamily="monospace"/>
+    </FrameLayout>
+</LinearLayout>

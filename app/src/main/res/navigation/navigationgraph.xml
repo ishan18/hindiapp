@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationGraph"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.android.hindiapp.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main">
+        <action
+            android:id="@+id/colours3"
+            app:destination="@id/colours2"
+            app:enterAnim="@anim/nav_default_enter_anim"/>
+        <action
+            android:id="@+id/animal5"
+            app:destination="@id/animal2"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim" />
+        <action
+            android:id="@+id/action_mainActivity_to_family3"
+            app:destination="@id/family3" />
+        <action
+            android:id="@+id/action_mainActivity_to_numbers2"
+            app:destination="@id/numbers2" />
+    </activity>
+    <activity
+        android:id="@+id/animal2"
+        android:name="com.example.android.hindiapp.Animal"
+        android:label="Animal" />
+    <activity
+        android:id="@+id/colours2"
+        android:name="com.example.android.hindiapp.Colours"
+        android:label="Colours" />
+    <activity
+        android:id="@+id/family3"
+        android:name="com.example.android.hindiapp.Family"
+        android:label="activity_colours"
+        tools:layout="@layout/activity_colours" />
+    <activity
+        android:id="@+id/numbers2"
+        android:name="com.example.android.hindiapp.Numbers"
+        android:label="activity_colours"
+        tools:layout="@layout/activity_colours" />
+</navigation>
